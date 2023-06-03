@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>My Todo Task 2023</title>
+    <link rel="stylesheet" href="ibr.css">
+
+</head>
+<body>
+
+<div class="wrapper">
+    <div class="container">
+        <div class="sub-container">
+            <!--Budget-->
+            <div class="totel-amount-container">
+                <h3> Budget</h3>
+                <p class="hide error" id="budget-error"> value cannot be empty or negitive
+
+                </p>
+                <input type="number" id="totel-amount"
+                placeholder="Enter Total Amount"
+                />
+                <button class="submit" id="total-amount-button"> Set budget
+                    
+                </button>
+            </div>
+            <!-- Expenditure -->
+            <div class="user-amount-container">
+                <h3>Expenses</h3>
+                <p class="hide error" id="product-title-error">
+                    value cannot be empty
+                </p>
+                <input 
+                type="text"
+                class="product-title"
+                id="product-title"
+                placeholder="Enter Title of Product"
+                />
+                <input 
+                type="number"
+                id="user-amount"
+                placeholder="Enter the Cost of Product"
+                />
+                <button class="submit"
+                id="cheak-amount">Cheak Amount </button>
+            </div>
+
+        </div>
+        <!-- Output -->   
+        <div class="output-container flex-space">
+<div>
+         
+        <p>Total budget </p>
+        <span id="amount">0</span>
+    </div>
+    <div>
+        <p>Expenses</p>
+        <span id=" expenditure- value">0</span>
+    </div>
+    <div>
+        <p>Balance</p>
+        <span id="balance-amount">0</span>
+    </div>
+</div> 
+</div>
+
+<!-- List -->
+<div class="list">
+    <h3> Expenses-list</h3>
+    <div class="list-container" id="list">
+
+    </div>
+
+</div>
+</div>
+<script src="ibr.js"></script>
+</body>
+</html>
